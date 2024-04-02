@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+        <div class="p-6">
+            <h2 class="text-xl font-semibold mb-4">Registration Form</h2>
+           <form action="{{ url_for('register') }}" method="post">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 font-semibold">Password</label>
+                    <input type="password" name="password" id="password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                    <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+                <div class="mb-4">
+                    <label for="school_name" class="block text-gray-700 font-semibold">School Name</label>
+                    <input type="text" name="school_name" id="school_name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 font-semibold">Subject</label>
+                    <input type="text" name="subject" id="subject" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-indigo-500 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-600">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}
