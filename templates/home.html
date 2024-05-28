@@ -1,6 +1,76 @@
 {% extends 'base.html' %}
 
 {% block content %}
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a class="text-xl font-semibold text-white" href="#">D&D Hub</a>
+            <!-- Navigation Links -->
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white">Characters</a>
+                <a href="#" class="text-gray-300 hover:text-white">Spells</a>
+                <a href="#" class="text-gray-300 hover:text-white">Monsters</a>
+                <a href="#" class="text-gray-300 hover:text-white">Items</a>
+            </div>
+            <!-- User Profile -->
+            <div class="flex items-center space-x-2">
+                <span class="text-gray-300">Welcome, <strong>Adventurer!</strong></span>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to D&D Hub</h1>
+            <p class="text-lg mb-8">Your ultimate resource for all things Dungeons & Dragons.</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-users text-3xl text-blue-500 mb-4"></i>
+                    <h2 class="text-xl font-semibold mb-2">Create Characters</h2>
+                    <p class="text-gray-700">Build and customize your own characters with our easy-to-use tools.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-book text-3xl text-blue-500 mb-4"></i>
+                    <h2 class="text-xl font-semibold mb-2">Explore Spells</h2>
+                    <p class="text-gray-700">Discover a vast library of spells to enhance your adventures.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-dragon text-3xl text-blue-500 mb-4"></i>
+                    <h2 class="text-xl font-semibold mb-2">Encounter Monsters</h2>
+                    <p class="text-gray-700">Face off against fearsome monsters from across the D&D universe.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-sword text-3xl text-blue-500 mb-4"></i>
+                    <h2 class="text-xl font-semibold mb-2">Collect Items</h2>
+                    <p class="text-gray-700">Acquire powerful artifacts and equipment to aid you on your quests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 D&D Hub. All rights reserved.</p>
+        </div>
+    </footer>
 
 {% endblock %}
